@@ -34,7 +34,7 @@ namespace Tarea5_RicardoLazo
                     Console.WriteLine("Opción no válida. Ingrese nuevamente.");
                     Console.Write("Ingrese la opción deseada: ");
                 }
-
+                Console.Clear();
                 switch (opcionPrincipal)
                 {
                     case 1:
@@ -53,7 +53,7 @@ namespace Tarea5_RicardoLazo
                                 Console.WriteLine("Opción no válida. Ingrese nuevamente.");
                                 Console.Write("Ingrese la opción deseada: ");
                             }
-
+                            Console.Clear();
                             switch (opcionIngresarDatos)
                             {
                                 case 1:
@@ -67,6 +67,7 @@ namespace Tarea5_RicardoLazo
                                         Console.Write("Ingrese el salario del empleado: ");
                                     }
                                     EmpleadosYGerentes.Add(new Empleado(nombreEmpleado, salarioEmpleado));
+                                    Console.Clear();
                                     break;
                                 case 2:
                                     Console.Write("Ingrese el nombre del gerente: ");
@@ -81,11 +82,14 @@ namespace Tarea5_RicardoLazo
                                     Console.Write("Ingrese el departamento del gerente: ");
                                     string departamentoGerente = Console.ReadLine();
                                     EmpleadosYGerentes.Add(new Gerente(nombreGerente, salarioGerente, departamentoGerente));
+                                    Console.Clear();
                                     break;
                                 case 3:
                                     break;
                                 default:
                                     Console.WriteLine("Opción no válida. Ingrese nuevamente.");
+
+                                    Console.Clear();
                                     break;
                             }
                         } while (opcionIngresarDatos != 3);
@@ -106,7 +110,7 @@ namespace Tarea5_RicardoLazo
                                 Console.WriteLine("Opción no válida. Ingrese nuevamente.");
                                 Console.Write("Ingrese la opción deseada: ");
                             }
-
+                            Console.Clear();
                             switch (opcionVisualizarDatos)
                             {
                                 case 1:
@@ -116,9 +120,14 @@ namespace Tarea5_RicardoLazo
                                         empleado.MostrarInformacion();
                                         Console.WriteLine();
                                     }
+                                    Console.Write("Presione cualquier tecla para continuar");
+                                    Console.ReadKey();
+                                    Console.Clear();
                                     break;
                                 case 2:
-                                    Console.WriteLine("Saliendo...");
+                                    Console.WriteLine("Saliendo... Preisone cualquier tecla para continuar");
+                                    Console.ReadKey();
+                                    Console.Clear();
                                     break;
                                 default:
                                     Console.WriteLine("Opción no válida. Ingrese nuevamente.");
@@ -137,6 +146,9 @@ namespace Tarea5_RicardoLazo
 
                     default:
                         Console.WriteLine("Opción no válida. Ingrese nuevamente.");
+                        Console.WriteLine("Presione cualquier tecla para continuar");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                 }
 
