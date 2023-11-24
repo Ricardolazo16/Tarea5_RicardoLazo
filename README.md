@@ -1,4 +1,4 @@
-# Aplicación de Gestión de Empleados
+# Actividad Práctica: Aplicación de Programación Orientada a Objetos.
 
 Esta aplicación en C# es un ejemplo simple de una aplicación de gestión de empleados que utiliza conceptos de programación orientada a objetos, herencia, interfaces y polimorfismo.
 
